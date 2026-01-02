@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>hendecad — private testing</title>
+  <meta name="description" content="hendecad by Phyturge Arboretum — invite-only internal testing." />
+  <style>
+    :root { --bg:#0b0f14; --fg:#e8eef6; --muted:#9fb0c0; --card:#101826; --line:#223247; --accent:#9ae6b4; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; background:var(--bg); color:var(--fg); }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 56px 20px; }
+    .brand { color: var(--muted); letter-spacing: .08em; text-transform: uppercase; font-size: 12px; }
+    h1 { font-size: 44px; margin: 10px 0 8px; line-height: 1.05; }
+    .tagline { font-size: 18px; color: var(--muted); max-width: 70ch; }
+    .pill { display:inline-block; padding: 6px 10px; border:1px solid var(--line); border-radius: 999px; font-size: 13px; color: var(--muted); margin-top: 14px;}
+    .grid { display:grid; grid-template-columns: 1fr; gap: 14px; margin-top: 26px; }
+    @media (min-width: 860px){ .grid{ grid-template-columns: 1fr 1fr 1fr; } }
+    .card { background: var(--card); border:1px solid var(--line); border-radius: 16px; padding: 16px; }
+    .card h3 { margin: 4px 0 8px; font-size: 16px; }
+    .card p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.4; }
+    .cta { margin-top: 26px; display:flex; flex-wrap:wrap; gap: 10px; align-items:center; }
+    a.btn { background: var(--accent); color: #0b0f14; padding: 10px 14px; border-radius: 12px; text-decoration:none; font-weight: 600; }
+    a.ghost { border:1px solid var(--line); color: var(--fg); padding: 10px 14px; border-radius: 12px; text-decoration:none; }
+    .fine { margin-top: 18px; color: var(--muted); font-size: 13px; line-height: 1.5; }
+    .faq { margin-top: 34px; }
+    .faq h2 { font-size: 18px; margin: 0 0 12px; }
+    details { border:1px solid var(--line); border-radius: 14px; padding: 12px 14px; background: rgba(16,24,38,.5); margin: 10px 0; }
+    summary { cursor:pointer; font-weight: 600; }
+    footer { margin-top: 46px; color: var(--muted); font-size: 12px; }
+    code { background: rgba(255,255,255,.06); padding: 2px 6px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="brand">Phyturge Arboretum</div>
+    <h1>hendecad</h1>
+    <div class="tagline">
+      Invite-only internal testing for a new toolchain: <code>phyX over Python</code>.
+      Built for engineers who care about repeatable, disciplined workflows.
+    </div>
+    <div class="pill">Internal beta • limited seats • hands-on feedback</div>
+
+    <section class="grid" aria-label="What to expect">
+      <div class="card">
+        <h3>Purpose-built testing</h3>
+        <p>Short test cycles, clear contracts, and practical instrumentation—so progress is measurable, not vibes.</p>
+      </div>
+      <div class="card">
+        <h3>Private by default</h3>
+        <p>Early access is controlled. You get a direct channel, but the codebase stays private during the internal phase.</p>
+      </div>
+      <div class="card">
+        <h3>Feedback that ships</h3>
+        <p>Invitees help shape the interface, reliability, and docs. The goal is correctness and clarity before scale.</p>
+      </div>
+    </section>
+
+    <section class="cta" aria-label="Call to action">
+      <!-- Zmień maila na swój -->
+      <a class="btn" href="mailto:you@yourdomain.tld?subject=hendecad%20internal%20testing%20request&body=Hi%2C%0A%0AI%27d%20like%20to%20join%20hendecad%20internal%20testing.%0A%0AName%3A%0AUse%20case%3A%0ATech%20stack%3A%0AWhat%20I%20can%20test%3A%0A%0AThanks%2C">Request an invite</a>
+      <!-- Zmień URL na właściwy -->
+      <a class="ghost" href="https://github.com/phyturge" target="_blank" rel="noreferrer">GitHub</a>
+    </section>
+
+    <p class="fine">
+      hendecad is an internal testing program. Access is granted manually.
+      No spam, no mailing list—just a small group of early testers.
+    </p>
+
+    <section class="faq">
+      <h2>FAQ</h2>
+
+      <details>
+        <summary>What is “phyX over Python”?</summary>
+        <div class="fine">
+          It reads like: “a small layer (phyX) built on top of Python.”
+          Meaning: Python is the runtime and ecosystem; phyX is the opinionated system layer (rules, interfaces, workflow) that makes it behave like a product.
+        </div>
+      </details>
+
+      <details>
+        <summary>Do I need to be a programmer?</summary>
+        <div class="fine">
+          Yes—this is internal testing. The current target audience is technical users who can give precise feedback.
+        </div>
+      </details>
+
+      <details>
+        <summary>When will it be public?</summary>
+        <div class="fine">
+          When internal testing stabilizes the core workflow and documentation. No dates promised yet.
+        </div>
+      </details>
+    </section>
+
+    <footer>
+      © Phyturge Arboretum • hendecad by Phyturge Arboretum
+    </footer>
+  </main>
+</body>
+</html>
